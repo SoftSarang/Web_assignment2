@@ -1,0 +1,226 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Typography (uses imported Poppins) */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D3D8E0; /* Birch-like soft grayish-blue background */
+    color: #1E3A8A; /* Dark blue for contrast */
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  #top-banner {
+    background-image: url('https://i.pinimg.com/1200x/67/25/31/672531c9686a5f81be357b3a803349cb.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 1rem;
+    position: relative;
+  }
+  
+  #top-banner .overlay {
+    background: rgba(135, 207, 235, 0.9); /* Light blue with transparency */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+  
+  /* Navbar */
+  #navbar {
+    margin-top: 1.5rem;
+  }
+  
+  .nav-link {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #FFD700; /* Gold hover for contrast */
+    border-bottom: 2px solid #FFD700; /* Enhanced bottom underline */
+  }
+  
+  /* Sections */
+  .layout-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.1); /* Dark blue shadow */
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    color: #1E3A8A; /* Dark blue for headings */
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .section-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #87CEEB; /* Light blue accent */
+  }
+  
+  .paragraph-text {
+    font-size: 1.1rem;
+  }
+  
+  /* Images */
+  .featured-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #87CEEB; /* Light blue border */
+    box-shadow: 0 2px 5px rgba(30, 58, 138, 0.1); /* Dark blue shadow */
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  /* Music Gallery */
+  .music-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .music-item {
+    text-align: center;
+  }
+  
+  .music-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #87CEEB; /* Light blue border */
+    box-shadow: 0 2px 5px rgba(30, 58, 138, 0.1); /* Dark blue shadow */
+    border-radius: 5px; /* Slight rounding for square images */
+  }
+  
+  .music-name {
+    font-size: 1rem;
+    color: #1E3A8A;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+  
+  /* Cards */
+  .card-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    flex: 1 1 200px;
+    background-color: #E6F0FA; /* Light blue tint for cards */
+    padding: 1rem;
+    border: 1px solid #87CEEB; /* Light blue border */
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover,
+  .card:focus {
+    transform: scale(1.05);
+    outline: 2px solid #1E3A8A; /* Dark blue focus outline */
+  }
+  
+  /* Tags */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background-color: #87CEEB; /* Light blue tags */
+    color: #1E3A8A; /* Dark blue text */
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: 500;
+  }
+  
+  /* Form */
+  #user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.8rem;
+    border: 1px solid #87CEEB; /* Light blue border */
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #E6F0FA; /* Light blue tint */
+  }
+  
+  .form-input:focus {
+    border-color: #1E3A8A; /* Dark blue focus */
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #1E3A8A; /* Dark blue button */
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover,
+  .submit-btn:focus {
+    background-color: #87CEEB; /* Light blue hover */
+    outline: 2px solid #1E3A8A; /* Dark blue focus outline */
+  }
+  
+  /* Footer */
+  .footer-bg {
+    background-color: #1E3A8A; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
